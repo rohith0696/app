@@ -10,7 +10,7 @@ function fun()
 {
     result.textContent = 'Your Name is '+name1.value+' '+name2.value;
 }
-const num1 = document.querySelector('#num1');
+const radius = document.querySelector('#radius');
 
 const result1 = document.querySelector('#result1');
 
@@ -18,6 +18,6 @@ btn1.addEventListener("click",calculate);
 
 function calculate()
 {
-    const cal =Math.PI*(num1.value*num1.value);
-    result1.textContent = 'Area is '+Math.round(cal*100.0)*100.0;
+    const cal =Math.PI*radius.value*radius.value;
+    result1.textContent = 'Area of circle is '+cal;
 }
